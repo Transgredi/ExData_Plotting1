@@ -1,0 +1,14 @@
+1. Col names:
+Date
+Time
+Global_active_power
+Global_reactive_power
+Voltage
+Global_intensity
+Sub_metering_1
+Sub_metering_2
+Sub_metering_3
+
+2. 1st February 2007 starts at the row 66637, 2nd February 2007 ends at the row 69516.
+
+3. 2879 rows to be loaded from the source file.

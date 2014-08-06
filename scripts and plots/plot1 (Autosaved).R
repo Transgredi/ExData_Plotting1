@@ -13,13 +13,17 @@ names(df) <- c(
   "Sub_metering_2",
   "Sub_metering_3")
 
+df$Date <- as.Date(df$Date, "%d/%m/%Y")
+df$Weekday <- format(df$Date,"%A")
+
 h <- df$Global_active_power
 
-png("plot1.png")
-
+dev
 hist(h,
   col="red",
   main="Global Active Power",
   xlab="Global Active Power (kilowatts)")
 
-dev.off()
+dev.copy(png, "plot1.png")
+
+#def.off()

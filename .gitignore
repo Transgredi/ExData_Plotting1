@@ -3,3 +3,5 @@ exdata-data-household_power_consumption.zip
 .*
 support_data.txt
 some_notes.txt
+.RData
+.Rhistory

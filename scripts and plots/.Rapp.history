@@ -1,0 +1,477 @@
+library("swirl")
+swirl()
+0
+exit()
+quit()
+cat('test')
+ada
+2+2
+sample(c(1:10000))
+sample(c(1:10000),10)
+hist(sample(c(1:10000),100))
+barplot(sample(c(1:10000),100))
+plot(sample(c(1:10000),100))
+data(UCBAdmissions)
+ucba <- as.data.frame(UCBAdmissions)
+ucba
+xt <- xtabs(Freq ~ Gender, ucba)
+xt <- xtabs(Freq ~ Gender+Dept, ucba)
+xt <- xtabs(Freq ~ Gender+Admit, ucba)
+xt
+plot(xt)
+hist(xt)
+data(warpbreaks)
+warpbreaks
+xt <- xtabs(Freq ~ Gender+Dept+Admit, ucba)
+ft <- ftable(xt)
+ft
+plot(ft)
+ft[1]
+ft[1,]
+ft[,1]
+jitter
+jitter()
+?jitter
+library(plyr)
+example(split)
+example(sapply)
+med <- read.csv("~/Downloads/insight_connect_export.csv")
+med
+str(med)
+plot(med$Duration..minutes.)
+med[,3]
+med[,2]
+as.number(med[,2])
+as.numeric(med[,2])
+t <- as.numeric(med[,2])
+t
+plot(t)
+plot(jitter(t,3)
+plot(jitter(t,5))
+hist(t)
+max(t)
+min(t)
+summary(t)
+library(ggplo2)
+?ggplot
+ggplot(t)
+qplot(t)
+?source
+x <- 1:30
+x <- 1:30000
+x <- 1:300
+x <- seq(1,30,0.01)
+x <- seq(1,30,0.1)
+y <- sin(x)
+plot(x,y, type="l")
+plot(x,y)
+x <- rnorm(1000)
+hist(x)
+hist(x, "blue")
+hist(x, color="blue")
+hist(x, col="blue")
+hist(x, col="green",breaks=2)
+hist(x, col="green",breaks=100)
+boxplot(x,col="red")
+abline(0)
+abline(a=1)
+abline(a=2)
+abline(b=2)
+abline(h=0)
+hist(x, col="green",breaks=40)
+rug(x)
+abline(a=0.4,v=0)
+abline(v=0)
+abline(a=1,b=2,v=0)
+abline(a=1,b=5,v=0)
+abline(a=1,b=5,v=4)
+abline(a=1,b=5,v=3)
+abline(a=1,b=4)
+abline(a=1,b34)
+abline(a=1,b=3)
+abline(a=1,b=2)
+abline(a=1,b=6)
+abline(a=1,b=7)
+abline(a=1/3,b=7)
+abline(a=4,b=7)
+abline(a=6,b=7)
+abline(a=6,b=9)
+?abline
+## Setup up coordinate system (with x == y aspect ratio):#
+plot(c(-2,3), c(-1,5), type = "n", xlab = "x", ylab = "y", asp = 1)#
+## the x- and y-axis, and an integer grid#
+abline(h = 0, v = 0, col = "gray60")#
+text(1,0, "abline( h = 0 )", col = "gray60", adj = c(0, -.1))#
+abline(h = -1:5, v = -2:3, col = "lightgray", lty = 3)#
+abline(a = 1, b = 2, col = 2)#
+text(1,3, "abline( 1, 2 )", col = 2, adj = c(-.1, -.1))
+## Setup up coordinate system (with x == y aspect ratio):#
+plot(c(-2,3), c(-1,5), type = "n", xlab = "x", ylab = "y", asp = 1)#
+## the x- and y-axis, and an integer grid#
+abline(h = 0, v = 0, col = "gray60")#
+text(1,0, "abline( h = 0 )", col = "gray60", adj = c(0, -.1))#
+abline(h = -1:5, v = -2:3, col = "lightgray", lty = 3)#
+abline(a = 1, b = 4, col = 2)#
+text(1,3, "abline( 1, 2 )", col = 2, adj = c(-.1, -.1))
+## Setup up coordinate system (with x == y aspect ratio):#
+plot(c(-2,3), c(-1,5), type = "n", xlab = "x", ylab = "y", asp = 1)#
+## the x- and y-axis, and an integer grid#
+abline(h = 0, v = 0, col = "gray60")#
+text(1,0, "abline( h = 0 )", col = "gray60", adj = c(0, -.1))#
+abline(h = -1:5, v = -2:3, col = "lightgray", lty = 3)#
+abline(a = 1, b = 3, col = 2)#
+text(1,3, "abline( 1, 2 )", col = 2, adj = c(-.1, -.1))
+## Setup up coordinate system (with x == y aspect ratio):#
+plot(c(-2,3), c(-1,5), type = "n", xlab = "x", ylab = "y", asp = 1)#
+## the x- and y-axis, and an integer grid#
+abline(h = 0, v = 0, col = "gray60")#
+text(1,0, "abline( h = 0 )", col = "gray60", adj = c(0, -.1))#
+abline(h = -1:5, v = -2:3, col = "lightgray", lty = 3)#
+abline(a = 1, b = 1, col = 2)#
+text(1,3, "abline( 1, 2 )", col = 2, adj = c(-.1, -.1))
+y <- data.frame
+class(y)
+y <- data.frame()
+names(y) <- c("col1", "col2")
+y <- data.frame(row.names=c("col1","col2")
+)
+y <- data.frame(col.names=c("col1","col2"))
+y <- data.frame(col1=c(2,3,4,2,2),col2=c(3,4,4,2,2))
+y[,2][,1==1]
+y[,2][y[,1==2]]
+y[,2]==1
+y[,2]==2
+y[y[,2]==2]
+y[][y[,2]==2]
+y[,][y[,2]==2]
+y[1,][y[,2]==2]
+y[,c(1:2)][y[,2]==2]
+y[c(1:2)][y[,2]==2]
+y[,3][y[,2]==2]
+y[,1][y[,2]==2]
+y[,2][y[,2]==2]
+y[,2][y[,2]!=2]
+y[,1:2][y[,2]!=2]
+y[,c(1:2)][y[,2]!=2]
+y[,c(1:2)]
+y[,c(2)]
+y[,c(2)][y[,2]!=2]
+y[y[,2]!=2]
+y[][y[,2]!=2]
+y[1,2][y[,2]!=2]
+y[1,][y[,2]!=2]
+y[,1][y[,2]!=2]
+y$col1>2
+y[y$col1>2]
+y[][y$col1>2]
+y[,][y$col1>2]
+y[,1:2][y$col1>2]
+y[,1:2][,y$col1>2]
+y[,c(1:2)][,y$col1>2]
+y[,c(1:2)][y$col1>2,]
+?with
+data(cars)
+speed
+state <- data.frame(state.x77, region=state.region)
+state
+xyplot(Life.Exp ~ Income | region, data=state, layout = c(4.1))
+xyplot(Life.Exp ~ Income | region, data=state, layout = c(4,1))
+xyplot(Life.Exp ~ Income | region, data=state)
+library(ggplot2)
+data(mpg)
+?par
+qplot(displ, hwy, data=mpg)
+with(cars,plot(speed,dist))
+with(cars,plot(speed,dist,chp="*"))
+??chp
+with(cars,plot(speed,dist,chp="1"))
+with(cars,plot(speed,dist,chp=1))
+with(cars,plot(speed,dist,chp=2))
+par("chp")
+par("pch")
+with(cars,plot(speed,dist,pch=2))
+with(cars,plot(speed,dist,pch=3))
+with(cars,plot(speed,dist,pch=4))
+with(cars,plot(speed,dist,pch=5))
+with(cars,plot(speed,dist,pch=6))
+with(cars,plot(speed,dist,pch=8))
+with(cars,plot(speed,dist,pch=7))
+with(cars,plot(speed,dist,pch=9))
+with(cars,plot(speed,dist,pch=0))
+with(cars,plot(speed,dist,pch=11))
+with(cars,plot(speed,dist,pch=12))
+with(cars,plot(speed,dist,pch=13))
+with(cars,plot(speed,dist,pch=14))
+with(cars,plot(speed,dist,pch=15))
+with(cars,plot(speed,dist,pch=16))
+with(cars,plot(speed,dist,pch=17))
+x <- rnorm(20)
+y <- c(1,2,1,3,5,3,2,3,4,3,2,2,3)
+y <- append(c(3,4,5,3))
+append(y,c(2,2,3,2,3))
+y<-append(y,c(2,2,3,2,3))
+length(y)
+y<-append(y,c(5,3))
+plot(x)
+abline(y)
+abline(h=y)
+example(points)
+?Devices
+example("pch")
+dev.cur()
+lines(2,2)
+lines(2,3)
+lines(2)
+lines(c(2,3))
+lines(c(2,5))
+lines(c(2,4))
+lines(c(3,4))
+lines(c(3,3))
+lines(c(3,3),c(3,4))
+plot(c(2,3,2,3,4))
+lines(c(1,2))
+lines(c(2,2))
+lines(c(1,1))
+lines(c(2,1))
+?lines
+d <- read.csv("household_power_consumption.txt")
+size(d)
+??size
+memory.size()
+object.size(d)
+m <- object.size(d)
+m / 1024
+m / 1024 / 1024
+dd <- read.csv("household_power_consumption.txt", nrows=2)
+dd <- read.csv("household_power_consumption.txt", nrows=c(3:30))
+dd <- read.csv("household_power_consumption.txt", nrows=c(3))
+dd <- read.csv("household_power_consumption.txt", nrows=c(3), skip=2)
+dd <- read.csv("household_power_consumption.txt", nrows=c(3), skip=2, header=TRUE)
+dd <- read.csv("household_power_consumption.txt", nrows=4, skip=2)
+dd
+nrow(dd)
+length(dd)
+d
+length(d)
+nrow(d)
+dim(d)
+d <- read.csv("household_power_consumption.txt", sep=";", header=T)
+head(d)
+tail(d)
+d[][d$Date=='01/02/2007']
+d[,d$Date=='01/02/2007']
+d[d$Date!='01/02/2007',]
+d[d$Date=='01/02/2007']
+d[d$Date=='01/02/2007',]
+d[d$Date=='24/12/2006',]
+d[d$Date=='1/2/2006',]
+d[,1][d$Date=='1/2/2007',]
+d[,1][,d$Date=='1/2/2007']
+d$Date=='1/2/2007'
+d[d$Date=='1/2/2007']
+d[d$Date=='1/2/2007',]
+str(d)
+?as.date
+?as.Date
+dates <- d[d$Date=='1/2/2007',]
+as.Date(dates$Date,format='%d/%m/%y')
+as.Date(dates$Date,format='%d/%m/%Y')
+d[d$Date=='1/2/2007' & d$Date=='2/2/2007' ,]
+d[d$Date=='1/2/2007' | d$Date=='2/2/2007',]
+sub <- d[d$Date=='1/2/2007' | d$Date=='2/2/2007',]
+sub
+nrow(sub)
+head(sub)
+tail(sub,10)
+date
+?date
+date()
+format(sub$Date,%A)
+format(sub$Date,''%A')
+format(sub$Date,'%A')
+dates
+df <- as.Date(dates$Date,format='%d/%m/%Y')
+format(df,"%A")
+head(sub,1)
+(stail
+;
+tail(sub,1)
+sel.rows <- read.csv("household_power_consumption.txt", sep=";", header=F, skip=66637, nrows=2879)
+nrow(sel.rows)
+str(sel.rows)
+file = "household_power_consumption.txt"#
+#
+df <- read.csv(file, sep=";", header = F, skip=66637, nrows=2879)#
+#
+names(df) <- c(#
+  "Date",#
+  "Time",#
+  "Global_active_power",#
+  "Global_reactive_power",#
+  "Voltage",#
+  "Global_intensity",#
+  "Sub_metering_1",#
+  "Sub_metering_2",#
+  "Sub_metering_3")#
+#
+df$Date <- as.Date(df$Date, "%d/%m/%Y")#
+df$Weekday <- format(df$Date,"%A")#
+#
+h <- df$Global_active_power#
+#
+hist(h,#
+  col="red",#
+  main="Global Active Power",#
+  xlab="Global Active Power (kilowatts)")#
+#
+dev.copy(png, "plot1.png")#
+#
+def.off()
+file = "household_power_consumption.txt"#
+#
+df <- read.csv(file, sep=";", header = F, skip=66637, nrows=2879)#
+#
+names(df) <- c(#
+  "Date",#
+  "Time",#
+  "Global_active_power",#
+  "Global_reactive_power",#
+  "Voltage",#
+  "Global_intensity",#
+  "Sub_metering_1",#
+  "Sub_metering_2",#
+  "Sub_metering_3")#
+#
+df$Date <- as.Date(df$Date, "%d/%m/%Y")#
+df$Weekday <- format(df$Date,"%A")#
+#
+h <- df$Global_active_power#
+dev.copy(png, "plot1.png")#
+hist(h,#
+  col="red",#
+  main="Global Active Power",#
+  xlab="Global Active Power (kilowatts)")#
+#def.off()
+file = "household_power_consumption.txt"#
+#
+df <- read.csv(file, sep=";", header = F, skip=66637, nrows=2879)#
+#
+names(df) <- c(#
+  "Date",#
+  "Time",#
+  "Global_active_power",#
+  "Global_reactive_power",#
+  "Voltage",#
+  "Global_intensity",#
+  "Sub_metering_1",#
+  "Sub_metering_2",#
+  "Sub_metering_3")#
+#
+df$Date <- as.Date(df$Date, "%d/%m/%Y")#
+df$Weekday <- format(df$Date,"%A")#
+#
+h <- df$Global_active_power#
+#
+hist(h,#
+  col="red",#
+  main="Global Active Power",#
+  xlab="Global Active Power (kilowatts)")#
+#
+dev.copy(png, "plot1.png")#
+#
+#def.off()
+dev.set("quartz")
+dev.off()
+rnorm(100)
+r <- rnorm(100)
+m <- matrix(r,10.10)
+contour(m)
+persp(m)
+persp(m, expand=0.4)
+persp(m, expand=0.1)
+persp(m, expand=0.05)
+volcano
+contour(volcano)
+persp(volcano,expand=0.1)
+persp(volcano,expand=0.4)
+persp(volcano,expand=0.6)
+persp(volcano,expand=0.9)
+persp(volcano,expand=0.99)
+persp(volcano)
+persp(volcano,expand=0.05)
+sqrt(10000000)
+log(10000000)
+log(10000000,10)
+log(10000000,100)
+m <- matrix(r,10,10)
+r <- rnorm(10000000)
+r
+m <- matrix(r,1000,1000)
+m
+persp(m,0.3)
+persp(m,expand=0.3)
+image(m)
+10^1000
+x <- 10^1000
+x <- 10^100
+log(10,100)
+log(100,10)
+log(100,100)
+log(1000,1000)
+log(1000,100)
+log(1000,10)
+log(1000000,10)
+c <- c(1,3,4,5,3,4)
+c
+plot(c)
+lines(c(3,4,5,4,3,2))
+library(lattice)
+x
+y
+y <- c(y,9)
+dotplot(y)
+?dotplot
+cars
+dotplot(cars)
+head(cars)
+mtcars
+dotplot(mtcars$wt)
+xyplot(mpg ~ hp, mtcars)
+lowess
+morfologia <- read.csv("/Users/tim/Documents/Body&Mind/Blood/morfologia.csv", header=TRUE, sep=";");#
+attach(morfologia);#
+#
+xtitle <- "Donation Date";#
+#
+morfDate <- strptime(as.character(morfologia$Month), "%d-%B-%Y");#
+morfDate <- unique(morfDate);#
+morfologia$Month <- as.Date(morfologia$Month, "%d-%B-%Y");#
+morfologia$Value <- as.numeric(morfologia$Value)#
+#
+HCT <- morfologia$Value[morfologia$Type == "HCT"];#
+HGB <- morfologia$Value[morfologia$Type == "HGB"];#
+MCH <- morfologia$Value[morfologia$Type == "MCH"];#
+MCHC<- morfologia$Value[morfologia$Type == "MCHC"];#
+MCV <- morfologia$Value[morfologia$Type == "MCV"];#
+MPV <- morfologia$Value[morfologia$Type == "MPV"];#
+PCT <- morfologia$Value[morfologia$Type == "PCT"];#
+PDW <- morfologia$Value[morfologia$Type == "PDW"];#
+PLT <- morfologia$Value[morfologia$Type == "PLT"];#
+RBC <- morfologia$Value[morfologia$Type == "RBC"];#
+RDW <- morfologia$Value[morfologia$Type == "RDW"];#
+WBC <- morfologia$Value[morfologia$Type == "WBC"];#
+#
+par(mfrow=c(3,4));#
+#
+plot(morfDate, HCT, type="o", main="HCT", xlab=xtitle, ylab=unique(morfologia$Unit[morfologia$Type == "HCT"]));#
+plot(morfDate, HGB, type="o", main="HGB", xlab=xtitle, ylab=unique(morfologia$Unit[morfologia$Type == "HGB"]));#
+plot(morfDate, MCH, type="o", main="MCH", xlab=xtitle, ylab=unique(morfologia$Unit[morfologia$Type == "MCH"]));#
+plot(morfDate, MCHC,type="o", main="MCHC", xlab=xtitle, ylab=unique(morfologia$Unit[morfologia$Type == "MCHC"]));#
+plot(morfDate, MCV, type="o", main="MCV", xlab=xtitle, ylab=unique(morfologia$Unit[morfologia$Type == "MCV"]));#
+plot(morfDate, MPV, type="o", main="MPV", xlab=xtitle, ylab=unique(morfologia$Unit[morfologia$Type == "MPV"])); #
+plot(morfDate, PCT, type="o", main="PCT", xlab=xtitle, ylab=unique(morfologia$Unit[morfologia$Type == "PCT"]));#
+plot(morfDate, PDW, type="o", main="PDW", xlab=xtitle, ylab=unique(morfologia$Unit[morfologia$Type == "PDW"]));#
+plot(morfDate, PLT, type="o", main="PLT", xlab=xtitle, ylab=unique(morfologia$Unit[morfologia$Type == "PLT"]));#
+plot(morfDate, RBC, type="o", main="RBC", xlab=xtitle, ylab=unique(morfologia$Unit[morfologia$Type == "RBC"]));#
+plot(morfDate, RDW, type="o", main="RDW", xlab=xtitle, ylab=unique(morfologia$Unit[morfologia$Type == "RDW"]));#
+plot(morfDate, WBC, type="o", main="WBC", xlab=xtitle, ylab=unique(morfologia$Unit[morfologia$Type == "WVC"]));

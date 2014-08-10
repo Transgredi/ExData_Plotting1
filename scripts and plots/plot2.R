@@ -9,7 +9,7 @@ if(!file.exists(file)){
 }
 
 #To save time and resources only selected lines needed for the plots are loaded
-#from the data file. The file has been examined first and analyzed 
+#from the data file. The file has been loaded into R once and examined 
 #to determine number of rows with data for 1st and 2nd February 2007.
 #Header is in the first row and since we do not load it, "header" is set to false.
 df <- read.csv(file, sep=";", header = F, skip=66637, nrows=2879)
